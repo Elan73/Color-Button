@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<title>
+Color Change
+</title>
+<head style="font-size:40px"> 
+<b>Click the Buttons to change the color of the website</b>
+</head>
+<p>Click <b>Ctrl + U</b> to see source code<p>
+<br>
+<style type="text/css">
+#submit {
+background-color: #bbb;
+padding: .5em;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 6px;
+color: #fff;
+font-family: 'Oswald';
+font-size: 20px;
+text-decoration: none;
+border: none;
+}
+#submit:hover {
+border: none;
+background: black;
+box-shadow: 0px 0px 1px #777;
+}
+</style>
+<!--Everything between the "style" commands is css. It is used to make the buttons look the way they look 
+(other than the actual color of the text which is below).
+-->
+<button id="submit" type="button" style="color: red;" onclick="red()">Red</button>
+<br>
+<button id="submit" type="button" style="color:orange;" onclick="orange()">Orange</button>
+<br>
+<button id="submit"  type="button" style="color:yellow;" onclick="yellow()">Yellow</button>
+<br>
+<button id="submit" type="button" style="color:green;" onclick="green()">Green</button>
+<br>
+<button id="submit" type="button" style="color:blue;" onclick="blue()">Blue</button>
+<br>
+<button id="submit" type="button" style="color:purple;" onclick="purple()">Purple</button>
+<!--
+Basically everything above is html. For the most part, it is self explanatory 
+as far as intuitively just understanding it. The only thing that may be a little
+weird is the <br> in there periodically. That is just to make sure that all the 
+text and buttons aren't on the same line. (So basically it just means enter.)
+-->
+<script>
+function red()
+{
+document.body.style.backgroundColor = "red";
+}
+function orange()
+{
+document.body.style.backgroundColor = "orange";
+}
+function yellow()
+{
+document.body.style.backgroundColor = "yellow";
+}
+function green()
+{
+document.body.style.backgroundColor = "green";
+}
+function blue()
+{
+document.body.style.backgroundColor = "blue";
+}
+function purple()
+{
+document.body.style.backgroundColor = "purple";
+}
+</script>
+<!--
+Everything between the script commands are JavaScript. Basically,
+it is just my functions. Also, it should be noted that the color
+logic is also JavaScript.
+-->
+</html>
